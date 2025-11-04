@@ -1,0 +1,83 @@
+
+    <html>
+        <head><meta charset='utf-8'>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; }
+        h2 { text-align: center; color: #333; }
+        table { 
+            border-collapse: collapse; 
+            width: 100%; 
+            margin-top: 20px; 
+            background: white; 
+            box-shadow: 0 0 8px rgba(0,0,0,0.1);
+        }
+        th, td { 
+            text-align: left; 
+            padding: 10px; 
+            border-bottom: 1px solid #ddd; 
+            vertical-align: top;
+            word-wrap: break-word;
+        }
+        th { 
+            background-color: #4B8BBE; 
+            color: white; 
+            text-transform: uppercase;
+            font-size: 13px;
+        }
+        tr:nth-child(even) { background-color: #f2f2f2; }
+        tr:hover { background-color: #eaf3ff; }
+        .badge-yes { color: #0b6623; font-weight: bold; }
+        .badge-no { color: #a00; font-weight: bold; }
+        .summary {
+            text-align: right;
+            margin-top: 25px;
+            font-size: 15px;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+    </head>
+        <body>
+            <h2>Entradas de tiempo registradas</h2>
+            <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Tarea</th>
+      <th>Usuario</th>
+      <th>Descripción del tiempo</th>
+      <th>Duración (min)</th>
+      <th>Fecha del registro</th>
+      <th>Facturable</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Proyecto-200300</td>
+      <td>David Mendez Alvarado</td>
+      <td>Avance en contrato</td>
+      <td>60.0</td>
+      <td>2025-11-03 16:22</td>
+      <td><span class='badge-no'>No</span></td>
+    </tr>
+    <tr>
+      <td>Proyecto-200300</td>
+      <td>David Mendez Alvarado</td>
+      <td>Pequeños arreglos</td>
+      <td>30.0</td>
+      <td>2025-11-03 16:52</td>
+      <td><span class='badge-yes'>Sí</span></td>
+    </tr>
+    <tr>
+      <td>Proyecto-200300</td>
+      <td>David Mendez Alvarado</td>
+      <td>Mejora</td>
+      <td>120.0</td>
+      <td>2025-11-03 15:22</td>
+      <td><span class='badge-yes'>Sí</span></td>
+    </tr>
+  </tbody>
+</table>
+            <div class='summary'>Total de horas registradas: 3.5 h</div>
+        </body>
+    </html>
+    
